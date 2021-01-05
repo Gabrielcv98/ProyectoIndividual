@@ -79,11 +79,11 @@ private Long l;
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
 
-    ArrayList<String> infoSesion;
+
     List<Steps> stepsList;
     List<VideosT> videostrainList;
     ImageView imagePerfil;
-    private  int random;
+
 
 
     @Override

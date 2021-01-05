@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     // Sign in success, update UI with the signed-in user's information
-                                    Toast.makeText(MainActivity.this, "createUserWithEmail:success", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(MainActivity.this, "Usuario creado efectivamente", Toast.LENGTH_SHORT).show();
                                     FirebaseUser user = firebaseAuth.getCurrentUser();
                                     DocumentReference df = firebaseFirestore.collection("users").document(user.getUid());
                                     Map<String, Object> userData = new HashMap<>();

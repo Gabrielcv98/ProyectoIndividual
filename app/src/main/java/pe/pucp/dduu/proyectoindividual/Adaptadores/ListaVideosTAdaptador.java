@@ -25,6 +25,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.ListResult;
@@ -46,8 +48,10 @@ public class ListaVideosTAdaptador extends RecyclerView.Adapter<ListaVideosTAdap
     private List<VideosT> videosTList;
     private LayoutInflater inflater;
     private FirebaseStorage firebaseStorage;
+    private FirebaseFirestore firebaseFirestore;
     private FirebaseAuth firebaseAuth;
     private List<VideosT> videosCompa;
+    String  tipo;
 
     public ListaVideosTAdaptador(Context context, List<VideosT> videosTList) {
         this.context = context;
@@ -86,6 +90,22 @@ public class ListaVideosTAdaptador extends RecyclerView.Adapter<ListaVideosTAdap
             descarga = itemView.findViewById(R.id.descargarvideo);
             fecha = itemView.findViewById(R.id.fechavideo);
             borrarvideo = itemView.findViewById(R.id.linkBorrarVideos);
+
+
+            DocumentReference referenceUser = firebaseFirestore.collection("users").document(firebaseAuth.getCurrentUser().getUid());
+            referenceUser.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                @Override
+                public void onSuccess(DocumentSnapshot documentSnapshot) {
+                    tipo =  documentSnapshot.get("tipoUsuario").toString().toLowerCase();
+
+                    if(tipo.equalsIgnoreCase("visitante")){
+
+                        borrarvideo.setVisibility(View.GONE);}
+                }});
+
+
+
+
             vervideo = itemView.findViewById(R.id.botonver);
 
         }
