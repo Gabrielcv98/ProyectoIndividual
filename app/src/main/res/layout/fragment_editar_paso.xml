@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.CrearPaso">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/idStepEdit"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:text="asdaasdasdas"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="50dp"
+        android:text="Editar paso"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="32dp"
+            android:text="Nombre">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/nombrenewpasoEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="32dp"
+
+
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+
+            android:ems="10"
+            android:hint="Nombres"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="32dp"
+            android:text="@string/creadorr"/>
+        <EditText
+            android:id="@+id/creadropasoEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginEnd="32dp"
+            android:textStyle="bold"
+            android:ems="10"
+            android:hint="Nombres"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="32dp"
+            android:text="@string/url_del_video"/>
+        <EditText
+            android:id="@+id/urlpasoEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="?attr/actionMenuTextColor"
+            android:ems="10"
+            android:hint="Url del paso"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/creadropasoEdit"
+            app:layout_constraintStart_toStartOf="@+id/creadropasoEdit"
+            app:layout_constraintTop_toBottomOf="@+id/creadropasoEdit" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="32dp"
+            android:text="@string/pais"/>
+        <EditText
+            android:id="@+id/paisdelpasoEdit"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="32dp"
+
+            android:ems="10"
+            android:hint="Pais de donde viene el paso"
+            app:layout_constraintEnd_toEndOf="@+id/urlpasoEdit"
+            app:layout_constraintStart_toStartOf="@+id/urlpasoEdit"
+            app:layout_constraintTop_toBottomOf="@+id/urlpasoEdit" />
+
+
+        <Button
+            android:id="@+id/botonEditarPaso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="?attr/actionBarPopupTheme"
+            android:text="Editar"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:textColor="?attr/actionMenuTextColor"
+            app:layout_constraintEnd_toEndOf="@+id/paisdelpasoEdit"
+            app:layout_constraintHorizontal_bias="@+id/paisdelpasoEdit"
+            app:layout_constraintStart_toStartOf="@+id/paisdelpasoEdit"
+            app:layout_constraintTop_toBottomOf="@+id/paisdelpasoEdit" />
+
+
+    </LinearLayout>
+</FrameLayout>

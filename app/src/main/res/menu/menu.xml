@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group
+        android:id="@+id/grupoAccion"
+        android:checkableBehavior="none"
+        ><item android:title="Galería Ita Lion"
+        android:id="@+id/galeria"
+        android:icon="@drawable/ic_action_galeriav"
+
+        ></item>
+        <item android:title="Entrenamientos ItaLion"
+            android:icon="@drawable/ic_action_pregunta"
+            android:id="@+id/biog"
+            ></item>
+        <item android:title="¿Donde nos ubicamos?"
+            android:icon="@drawable/ic_action_location"
+            android:id="@+id/ubica"
+            ></item>
+        <item
+            android:title=""
+
+            android:id="@+id/spacer1"
+            ></item>
+        <item
+            android:title=""
+
+            android:id="@+id/spacer10"
+            ></item>
+        <item
+            android:title=""
+
+            android:id="@+id/spacer2"
+            ></item>
+        <item
+            android:title=""
+
+            android:id="@+id/spacer3"
+            ></item>
+        <item
+            android:title=""
+
+            android:id="@+id/spacer4"
+            ></item>
+        <item
+            android:title=""
+
+            android:id="@+id/spacer5"
+            ></item>
+        <item
+            android:title=""
+
+            android:id="@+id/spacer6"
+            ></item>
+    </group>
+
+    <group
+        android:id="@+id/grupoAdmin"
+        >
+        <item android:title="Cerrar sesion"
+            android:icon="@drawable/ic_cerrarsesion"
+            android:id="@+id/cerrarSesion"
+            ></item>
+        <item android:title="Usuarios"
+            android:icon="@drawable/ic_cerrarsesion"
+            android:id="@+id/usuariositem"
+            android:visible="false"
+            ></item>
+    </group>
+
+</menu>

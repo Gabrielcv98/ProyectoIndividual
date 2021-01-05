@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ProyectoIndividual</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="hyperlink">Learn more about Android app development at\n<a href="https://google.com">LearnToDroid.com</a></string>
+    <string name="activity_link"><u>Go to Activity</u></string>
+    <string name="descargar">Descargar</string>
+    <string name="creador">Creador:</string>
+    <string name="freestyle">Freestyle</string>
+    <string name="step_or_move">Step or Move:</string>
+
+
+    <string name="video_referencia">Video</string>
+    <string name="todo">TODO</string>
+    <string name="google_maps_key" translatable="false">AIzaSyAbSa0-3PqGJb7lQ7REOIQ2Ts66Ch4KmLM</string>
+    <string name="bogle">Bogle</string>
+    <string name="a_adir_paso">Añadir Paso</string>
+    <string name="a_adir">Añadir</string>
+    <string name="ingrese_los_datos_para_insertar_un_paso">Ingrese los datos para insertar un paso</string>
+    <string name="pais">Pais</string>
+    <string name="url_del_video">URL del video</string>
+    <string name="creadorr">Creador</string>
+
+
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/listapasos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation ="horizontal"
+            android:padding="6dp">
+            <ImageView
+                android:id="@+id/italionimage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                app:srcCompat="@drawable/background_italion"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@string/todo">
+            </ImageView>
+            <LinearLayout
+                android:id="@+id/infopaso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/italionimage"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nombrepasotv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step_or_move"
+                    android:textStyle="bold">
+                </TextView>
+                <TextView
+                    android:id="@+id/nombrepaso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/bogle"
+                    android:layout_marginStart="15dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/creadortv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/creador"
+                    android:textStyle="bold">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/nombrecreador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/bogle"
+                    android:layout_marginStart="15dp">
+                </TextView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/linkbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="40dp"
+                android:drawableStart="@drawable/ic_baseline_play_circle_24"
+                android:text="Play">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/linkEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_below="@+id/linkbutton"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="22dp"
+                android:text="Editar"/>
+
+            <TextView
+                android:id="@+id/linkBorrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_below="@+id/linkbutton"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="74dp"
+                android:text="Borrar">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

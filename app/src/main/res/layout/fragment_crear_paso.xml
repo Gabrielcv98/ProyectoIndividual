@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.CrearPaso">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/ingrese_los_datos_para_insertar_un_paso"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+
+        <EditText
+            android:id="@+id/nombrenewpaso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="?attr/actionMenuTextColor"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/creadropaso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="?attr/actionMenuTextColor"
+            android:ems="10"
+            android:hint="Creador(es) del paso"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/urlpaso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="?attr/actionMenuTextColor"
+            android:ems="10"
+            android:hint="Inserte algun URL del video del paso"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/creadropaso"
+            app:layout_constraintStart_toStartOf="@+id/creadropaso"
+            app:layout_constraintTop_toBottomOf="@+id/creadropaso" />
+
+        <EditText
+            android:id="@+id/paisdelpaso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:hint="Inserte el pais de donde viene el paso"
+            app:layout_constraintEnd_toEndOf="@+id/urlpaso"
+            app:layout_constraintStart_toStartOf="@+id/urlpaso"
+            app:layout_constraintTop_toBottomOf="@+id/urlpaso" />
+
+
+        <Button
+            android:id="@+id/botonCrearPaso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="?attr/actionBarPopupTheme"
+            android:text="@string/a_adir"
+            android:textColor="?attr/actionMenuTextColor"
+            app:layout_constraintEnd_toEndOf="@+id/paisdelpaso"
+            app:layout_constraintHorizontal_bias="@+id/paisdelpaso"
+            app:layout_constraintStart_toStartOf="@+id/paisdelpaso"
+            app:layout_constraintTop_toBottomOf="@+id/paisdelpaso" />
+
+
+    </LinearLayout>
+</FrameLayout>
