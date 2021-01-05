@@ -423,7 +423,13 @@ private Long l;
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                         Log.d("infoApp", "video subido exitoso");
-                        Toast.makeText(Principal.this, "Se ha subido correctamente el video", Toast.LENGTH_SHORT).show();
+                        try {
+                            Principal.this.wait();
+                            Toast.makeText(Principal.this, "Se ha subido correctamente el video", Toast.LENGTH_SHORT).show();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+
                     }})
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
